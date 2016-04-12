@@ -1,0 +1,378 @@
+/* Telerik RadCalendar Default Skin */
+
+.calendarWrapper_MySkin
+{
+	width:206px; /*default*/
+	border-collapse:separate !important;
+	border:1px solid #212121 !important;
+	background:#fff;
+	color:#333;
+	font:11px arial,sans-serif;
+}
+.RadCalendar_MySkin
+{
+	width:206px; /*default*/
+	border-collapse:separate !important;
+	border:1px solid #212121 !important;
+	background:#fff;
+	color:#333;
+	font:11px arial,sans-serif;
+}
+
+.titlebar_MySkin,
+.TableLayout_MySkin
+{
+	width:100%;
+}
+
+/*titlebar*/
+
+/*.titlebar_MySkin
+{
+	border-bottom:1px solid #171717;
+	background:#444 url(Calendar/headerBg.gif) repeat-x;
+	color:#fff;
+}
+*/
+.RadCalendar_MySkin .rcTitlebar table
+{
+	border-bottom:1px solid #171717;
+	background:#444 url(Calendar/headerBg.gif) repeat-x;
+	color:#fff;
+}
+
+
+/*.titlebar_MySkin td
+{
+	border-bottom:1px solid #3d3d3d;
+	padding:0;
+	font:16px/35px arial,sans-serif;
+	text-align:center;
+}
+*/
+
+.RadCalendar_MySkin td
+{
+	border-bottom:1px solid #3d3d3d;
+	padding:0;
+	font:16px/35px arial,sans-serif;
+	text-align:center;
+}
+
+.titlebar_MySkin td img
+{
+	margin:0 5px;
+}
+
+/* week numbers and week days */
+
+.TableLayout_MySkin
+{
+	border-collapse:separate !important;
+	border:solid #fff;
+	border-width:8px 13px;
+	font:11px arial,sans-serif;
+}
+
+table.rcMainTable
+{
+	border-collapse:separate !important;
+	border:solid #fff;
+	border-width:8px 13px;
+	font:11px arial,sans-serif;
+}
+
+.TableLayout_MySkin .DaysOfWeek_MySkin
+{
+	padding:0 5px;
+	text-align:center;
+	font-weight:bold;
+	vertical-align:middle;
+	cursor:default;
+}
+
+table.rcMainTable .RadCalendar_MySkin.rcWeek
+{
+	padding:0 5px;
+	text-align:center;
+	font-weight:bold;
+	vertical-align:middle;
+	cursor:default;
+}
+.TableLayout_MySkin th.DaysOfWeek_MySkin
+{
+	border-bottom:1px solid #000;
+	padding:1px 4px 4px;
+	text-align:right;
+}
+
+.TableLayout_MySkin th.DaysOfWeek_MySkin:first-child
+{
+	text-align:center;
+}
+
+/* date cells */
+
+.radCalDefault_MySkin,
+.radCalWeekendDefault_MySkin,
+.otherMonth_MySkin,
+.outOfRange_MySkin,
+.radCalToday_MySkin,
+.radCalHover_MySkin,
+.radCalSelect_MySkin
+{
+	border:1px solid;
+	padding:0;
+	vertical-align:middle;
+}
+
+.radCalDefault_MySkin,
+.radCalWeekendDefault_MySkin,
+.otherMonth_MySkin,
+.outOfRange_MySkin
+{
+	border-color:#fff;
+}
+
+.radCalDefault_MySkin a,
+.radCalWeekendDefault_MySkin a,
+.otherMonth_MySkin a,
+.outOfRange_MySkin span,
+.radCalToday_MySkin a,
+.radCalHover_MySkin a,
+.radCalSelect_MySkin a
+{
+	display:block;
+	padding:1px 4px 2px 3px;
+	color:#333;
+	text-align:right;
+	text-decoration:none;
+}
+
+.radCalWeekendDefault_MySkin a
+{
+	color:#666;
+}
+
+.otherMonth_MySkin a,
+.outOfRange_MySkin span
+{
+	color:#ccc;
+}
+
+.outOfRange_MySkin span
+{
+	cursor:default;
+}
+
+.radCalToday_MySkin
+{
+	border-color:#2a2a2a;
+}
+
+.radCalHover_MySkin
+{
+	border-color:#ccc;
+	background:#ccc;
+}
+
+.radCalSelect_MySkin
+{
+	border-color:#363636 #1f1f1f #040404;
+	background:#454545 url('Calendar/todayBg.gif') repeat-x;
+}
+
+.radCalSelect_MySkin a
+{
+	color:#fff;
+}
+
+/*multimonth view*/
+
+.TableLayout_MySkin .TableLayout_MySkin
+{
+	border-width:0 4px 4px;
+}
+
+.TableLayout_MySkin .TableLayout_MySkin .titlebar_MySkin
+{
+	background:#fff none;
+	padding-top:4px;
+	padding-bottom:4px;
+	font-size:12px;
+	color:#333;
+}
+.rcMainTable .rcMainTable .RadCalendar_MySkin .rcTitlebar table
+{
+	background:#fff none;
+	padding-top:4px;
+	padding-bottom:4px;
+	font-size:12px;
+	color:#333;
+}
+
+
+
+
+
+.TableLayout_MySkin .TableLayout_MySkin  th.DaysOfWeek_MySkin
+{
+	padding-top:6px;
+}
+
+/*month view*/
+
+.MonthYearFastNav_MySkin
+{
+	border-collapse:separate;
+	border:1px solid #000;
+	background:#fff;
+	font:10px verdana,sans-serif;
+	color:#707070;
+	cursor:default;
+}
+
+.MonthYearFastNav_MySkin td
+{
+	border:0;
+	padding:3px 2px;
+	text-align:center;
+}
+
+.MonthYearFastNav_MySkin #RadCalendar_FastNav_Feb,
+.MonthYearFastNav_MySkin #RadCalendar_FastNav_Apr,
+.MonthYearFastNav_MySkin #RadCalendar_FastNav_Jun,
+.MonthYearFastNav_MySkin #RadCalendar_FastNav_Aug,
+.MonthYearFastNav_MySkin #RadCalendar_FastNav_Oct,
+.MonthYearFastNav_MySkin #RadCalendar_FastNav_Dec
+{
+	border-right:1px solid #b0b0b0;
+	padding-right:1px;
+}
+
+.MonthYearFastNav_MySkin .selected_MySkin
+{
+	background:#ccc;	
+	color:#000;
+}
+
+.MonthYearFastNav_MySkin .bottom_MySkin
+{
+	border-top:1px solid #e3e3e3;
+	background:#e3e3e3;
+	padding:4px 7px;
+	text-align:center;
+}
+
+.bottom_MySkin input
+{
+	border:1px solid;
+	border-color:#363636 #1f1f1f #040404;
+	margin:0 0.2em;
+	padding:0;
+	background:#474747 url(Calendar/buttonBg.gif) repeat-x;
+	color:#fff;
+	font:10px verdana,sans-serif;
+	cursor:pointer;
+}
+
+.rcButtons input
+{
+	border:1px solid;
+	border-color:#363636 #1f1f1f #040404;
+	margin:0 0.2em;
+	padding:0;
+	background:#474747 url(Calendar/buttonBg.gif) repeat-x;
+	color:#fff;
+	font:10px verdana,sans-serif;
+	cursor:pointer;
+}
+/*time view*/
+
+.radTimeTableCss_MySkin 
+{
+	border:1px solid #000;
+	background:#fff;
+	color:#666;
+	font:11px arial,sans-serif;
+}
+
+.radTimeTableCss_MySkin th
+{
+	border:0;
+	background:#e3e3e3;
+	color:#000;
+	line-height:24px;
+	font-weight:normal;
+	text-align:center;
+	cursor:default;
+}
+
+.radTimeTableCss_MySkin td
+{
+	border-left:1px solid #b0b0b0;
+	padding:0;
+}
+
+.radTimeTableCss_MySkin td:first-child
+{
+	border-left:0;
+}
+
+.radTimeTableCss_MySkin a
+{
+	display:block;
+	padding:6px 8px;
+    text-align:center;
+    color:#666;
+    text-decoration:none;
+	cursor:pointer;
+}
+
+.radTimeOverCss_MySkin a
+{	
+	background-color:#ccc;
+}
+
+/*pickers*/
+
+.pickerWrapper_MySkin
+{
+	vertical-align: middle;
+}
+
+.pickerWrapper_MySkin table,
+.pickerWrapper_MySkin td
+{
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+.pickerWrapper_MySkin td
+{
+	vertical-align:middle;
+}
+
+.pickerWrapper_MySkin .inputCell
+{
+	padding:0 4px 0 0;
+}
+
+.pickerWrapper_MySkin td a
+{
+	display:block;
+	text-decoration:none;
+	margin:0 2px;
+	outline:none;/*FF*/
+	position:relative;/*FF*/
+	z-index:2;/*Opera*/
+}
+* html .pickerWrapper_MySkin td a /*IE6*/
+{
+	position:static;
+}
+*+html .pickerWrapper_MySkin td a /*IE7*/
+{
+	position:static;
+}

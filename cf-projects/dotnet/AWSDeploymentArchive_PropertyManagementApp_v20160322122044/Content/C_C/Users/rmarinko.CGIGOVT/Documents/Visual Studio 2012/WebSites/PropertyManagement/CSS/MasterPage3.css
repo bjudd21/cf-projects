@@ -1,0 +1,120 @@
+﻿body
+{
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    margin: 0%;
+    padding-top: 1%;
+    background-image:url(../Images/UC_PORTAL_HP_BG_GRAY_GRAD.gif);
+}
+#pageWrapper
+{
+    width: 800px;
+    margin: auto;  
+    border: solid 1pt #000; 
+    height: 100%; 
+}
+#topHeader
+{
+    background-image: url(../Images/lg_cgi_header.gif);
+    background-repeat: no-repeat;
+    height:51px;
+    background-color: #CE0024;
+    text-align:right;
+    color: White;
+    line-height:3em;
+    border-right-width:2px;
+}
+#phaName
+{
+	float:right;
+	width:100px;
+	text-align:center;
+	font-size:larger;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+#extLinks
+{
+	width:250px;
+	float:right;
+}
+#cgiPharse
+{
+	float:right;
+}
+
+#userHeader
+{
+    background-color: #4682b4;
+    color:White;
+    height:20px;
+    border-top:solid 4pt #4682b4;
+}
+#userInf
+{
+	float:left;
+	width:195px;
+	font-size:10pt;
+	text-transform:capitalize;
+}
+#pageHeader
+{
+	clear:left;
+	float:right;
+    font-weight: bold;
+    text-align:left;
+    width:500px;
+}
+#headerIcons
+{
+	float:right;
+	width:100px;
+}
+#horizontalMenu
+{
+	background-color: firebrick;
+	float:left;
+	clear:right;
+}
+#bodyArea
+{
+	float: none;
+	clear: both;
+}
+#bodyLeft
+{
+	float: left;
+	padding-right: 0px;
+	width: 180px;
+	text-align: center;
+	padding-top: 80px;
+	background-color: #ccffcc;
+}
+#bodyRight
+{
+	float: left;
+	width:619px;
+    background-color: white;
+    overflow: auto;
+    border-left:solid 1pt #000;
+    border-top:solid 1pt #000;
+    border-bottom:solid 1pt #000;
+}
+#footerArea
+{
+    font-size: 0.7em;
+    background-color:gray;
+    vertical-align:bottom;
+    color: #c0c0c0;
+    font-family: Arial;
+    font-size:8pt;
+    height: 26px;
+    text-align: center;
+    background-repeat: no-repeat;
+    width: 800px;
+    font-weight: bold;
+    clear:both;
+    position:relative;
+}
+

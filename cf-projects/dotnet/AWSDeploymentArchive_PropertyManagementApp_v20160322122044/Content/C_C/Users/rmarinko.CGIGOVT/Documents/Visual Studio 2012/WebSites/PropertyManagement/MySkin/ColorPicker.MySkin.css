@@ -1,0 +1,172 @@
+﻿/* r.a.d.colorpicker default skin */
+
+/* skin-specific wrapper */
+.RadColorPicker_MySkin .palette
+{
+	border: solid 1px #9c9c9c;
+	background: #fff;
+}
+
+/* color buttons */
+
+.RadColorPicker_MySkin .palette ul
+{
+	padding: 2px 1px 0 1px;
+}
+
+.RadColorPicker_MySkin .palette ul li
+{
+	padding: 0;
+}
+
+.RadColorPicker_MySkin .palette ul li a
+{
+	cursor: hand;
+	overflow: hidden;
+	margin: 0;
+	padding: 2px;
+	border: 1px solid #e4e4e4;
+	zoom: 1;
+}
+
+* html .RadColorPicker_MySkin .palette ul li a
+{
+	padding: 3px;
+}
+
+.RadColorPicker_MySkin .breakline
+{
+	height: 0 !important;
+	line-height: 0 !important;
+	overflow: hidden !important;
+}
+
+* html .RadColorPicker_MySkin .breakline
+{
+	margin-top: -1px;
+}
+
+*+html .RadColorPicker_MySkin .breakline
+{
+	margin-top: -1px;
+}
+
+/* end of color buttons */
+
+/* selected color */
+.RadColorPicker_MySkin .palette ul .selectedcolor
+{
+	border: 1px solid #0066cc;
+}
+
+.RadColorPicker_MySkin .palette ul .selectedcolor span
+{
+}
+/* end of selected color */
+
+/* color preview panel */
+.RadColorPicker_MySkin .palette .colorpreview
+{
+	border: solid 1px #c5c5c5;
+	margin: 2px;
+}
+
+.RadColorPicker_MySkin .palette .colorpreview span
+{
+	font: normal 11px Arial, Verdana, Sans-serif;
+	cursor: default;
+	line-height: 24px;
+}
+
+.RadColorPicker_MySkin .palette .colorpreview .colorvaluedark
+{
+	color: white;
+	margin-right: 2px;
+}
+
+.RadColorPicker_MySkin .palette .colorpreview .colorvaluelight
+{
+	color: black;
+	margin-left: 2px;
+}
+
+.RadColorPicker_MySkin .palette .colorbox
+{
+}
+/* end of color preview panel */
+
+/* no color button */
+.RadColorPicker_MySkin .palette .emptycolor
+{
+	background: white;
+}
+
+.RadColorPicker_MySkin .palette .emptycolor,
+.RadColorPicker_MySkin .palette .emptycolor.selectedColor 
+{
+	border: solid 1px #c5c5c5 !important;
+	font-size: 12px;
+	text-align: center;
+	line-height: 30px;
+	margin: 2px 2px 0 2px;
+	background-color: #e4e4e4;
+}
+
+.RadColorPicker_MySkin .palette .emptycolor span,
+.RadColorPicker_MySkin .palette .emptycolor.selectedColor span
+{
+	background: transparent url(ColorPicker/NoColor.gif) no-repeat 0 6px;
+	padding: 5px 0 0 14px;
+	color: #000;
+	display: inline;
+	font: bold 10px Verdana, Arial, Sans-serif;
+	text-decoration: none;
+	clear: both;
+	float: none;
+	margin: 0;
+}
+
+.RadColorPicker_MySkin .palette .emptycolor a
+{
+	font: bold 10px Verdana, Arial, Sans-serif;
+	color: #c5c5c5;
+	text-decoration: none;
+	display: block; clear: both; float: none;
+	margin: 2px 0;
+}
+/* end of no color button */
+
+/* color picker icon */
+.RadColorPicker_MySkin .icon,
+.RadColorPicker_MySkin .icon a,
+.RadColorPicker_MySkin .icon em
+{
+	width: 31px; height: 21px;
+}
+
+.RadColorPicker_MySkin .icon a,
+.RadColorPicker_MySkin .icon a:hover,
+.RadColorPicker_MySkin .icon a:active,
+.RadColorPicker_MySkin .icon a:focus
+{
+	background-image: url('ColorPicker/IconSprites.gif');
+	background-repeat: no-repeat;
+	cursor: default;
+}
+
+.RadColorPicker_MySkin .icon a
+{
+	background-position: 0 0;
+}
+
+.RadColorPicker_MySkin .icon a:hover
+{
+	background-position: 0 -21px;
+}
+
+.RadColorPicker_MySkin .icon a:active,
+.RadColorPicker_MySkin .icon a:focus
+{
+	background-position: 0 -42px;
+}
+/* end color picker icon */

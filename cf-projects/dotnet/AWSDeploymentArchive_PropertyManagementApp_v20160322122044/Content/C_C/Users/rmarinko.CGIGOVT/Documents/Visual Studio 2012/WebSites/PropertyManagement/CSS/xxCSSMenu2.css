@@ -1,0 +1,74 @@
+﻿.CssMenu2
+{
+	float:right;
+}
+.CssMenu2 .AspNet-Menu-Horizontal
+{
+    position:relative;
+}
+
+.CssMenu2 li.AspNet-Menu-WithChildren a
+{
+	/*color: #CE0024;
+	padding: 4px 2px 4px 8px;*/
+	/*border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;*/
+	/*background: url(../Images/arrowDown.gif) firebrick no-repeat right center; *//*border-top: 1px solid #fdfdfd;
+	border-bottom: 1px solid #c1c1c1;*/
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: White;
+	padding:0px 0px 0px 0px;
+	border-spacing:0px;
+	
+}
+
+.CssMenu2 li.AspNet-Menu-Leaf a
+{
+	color: #333;
+	padding: 4px 2px 4px 8px;
+	/*border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;*/
+	/*background: url(../Images/arrowDown.gif) #cccccc no-repeat right center;*/
+	border-top: 1px solid #fdfdfd;
+	border-bottom: 1px solid #c1c1c1;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	background-color:#E3E3E3;
+	width:80px;
+}
+
+.CssMenu2 ul.AspNet-Menu li
+{
+    margin-right:5px;
+    width:10px;
+}
+
+.CssMenu2 ul.AspNet-Menu li.AspNet-Menu-Leaf
+{
+   right:55px;
+}
+
+/* Hovered text for First level*/
+.CssMenu2 li.AspNet-Menu-WithChildren a:hover
+{
+    /*background-color: #CE0024;*/
+}
+
+/* Hovered text for Second level*/
+.CssMenu2 ul.AspNet-Menu li.AspNet-Menu-Leaf a:hover
+{
+	background-color: gray;
+}
+
+/* Remove arrow image from leaves */
+.CssMenu2 li.AspNet-Menu-Leaf a, /* leaves */
+.CssMenu2 li.AspNet-Menu-Leaf span
+{
+    background-image: none !important;
+}

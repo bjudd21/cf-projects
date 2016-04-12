@@ -1,0 +1,16 @@
+﻿#RightUltraGrid
+{
+	height: 200px;
+}
+.boldMe
+{
+	font-weight:bold;
+}
+
+.pButton 
+{
+	background-color:#E0E9F9;
+    font-weight:bold;
+    height:27px;
+   
+}

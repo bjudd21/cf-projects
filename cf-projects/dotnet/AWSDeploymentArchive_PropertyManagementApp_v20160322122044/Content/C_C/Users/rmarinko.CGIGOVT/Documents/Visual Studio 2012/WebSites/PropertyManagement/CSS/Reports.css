@@ -1,0 +1,203 @@
+﻿body 
+{
+   
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	
+	/*border: solid 1px #ffffff;*/
+	/*width:768px;*/
+	
+}
+
+.pButton 
+{
+	background-color:#E0E9F9;
+    font-weight:bold;
+    height:27px;
+   
+}
+
+.pButtonOver 
+{
+	background-color:#6996AD;	
+    font-weight:bold;
+    height:27px;
+    cursor:pointer;    
+   
+}
+.NewButton
+{
+	background-image: url(../Images/Button2Off.gif);
+	background-color:Transparent ;
+	background-position:center ;
+	background-repeat:no-repeat;
+	border:None;
+	font-weight:bold;
+	color: Black;   
+    cursor:pointer;
+    width:158px;
+    height:36px; 
+}
+.NewButtonOver
+{
+	background-image: url(../../Images/Button2On.gif);
+	background-color:Transparent ;
+	background-position:center ;
+	background-repeat:no-repeat;
+	border:None;
+	font-weight:bold;   
+    cursor:pointer;
+    width:158px;
+    height:36px; 
+    color:black;
+    
+}
+.comment
+{
+	 background-color:#e0eef8;
+	 border-style:solid; 
+	 border-color:#cccccc; 
+	 border-width:1px;
+}
+
+.grid1
+{ 
+	border-style:none;
+}
+
+@media page{ 
+
+
+
+.pButton 
+{
+	background-color:#E0E9F9;
+    font-weight:bold;
+    height:27px;
+   
+}
+
+.pButtonOver 
+{
+	background-color:#6996AD;	
+    font-weight:bold;
+    height:27px;
+    cursor:pointer;    
+   
+}
+.comment
+{
+	 background-color:#e0eef8;
+	 border-style:solid; 
+	 border-color:#cccccc; 
+	 border-width:1px;
+}
+
+.grid1
+{ 
+	border-style:none;
+}
+
+}
+
+@media print 
+{
+
+body 
+{
+   
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	
+	/*border: solid 1px #ffffff;*/
+	/*width:768px;*/
+	
+}	
+.pButton 
+{
+	background-color:#E0E9F9;
+    font-weight:bold;
+    height:27px;
+    visibility:hidden;
+}
+
+.printer
+{
+	 visibility: hidden;
+}
+
+.NewButton
+{
+	background-image: url(../Images/Button2Off.gif);
+	background-color:Transparent ;
+	background-position:center ;
+	background-repeat:no-repeat;
+	border:None;
+	font-weight:bold;
+	color: Black;   
+    cursor:pointer;
+    width:158px;
+    height:36px; 
+}
+.NewButtonOver
+{
+	background-image: url(../Images/Button2On.gif);
+	background-color:Transparent ;
+	background-position:center ;
+	background-repeat:no-repeat;
+	border:None;
+	font-weight:bold;   
+    cursor:pointer;
+    width:158px;
+    height:36px; 
+    color:black;
+    
+}
+	
+.PrintButton
+{
+	background-image: url(../Images/btnPrintOff.jpg);
+	background-color:Transparent ;
+	background-position:center ;
+	background-repeat:no-repeat;
+	border:None;
+	font-weight:bold;
+	color: Black;   
+    cursor:pointer;
+    width:88px;
+    height:30px; 
+}
+.PrintButtonOver
+{
+	background-image: url(../Images/btnPrintOn.jpg);
+	background-color:Transparent ;
+	background-position:center ;
+	background-repeat:no-repeat;
+	border:None;
+	font-weight:bold;   
+    cursor:pointer;
+    width:88px;
+    height:30px; 
+    color:black;
+    
+}
+.comment
+{
+	 background-color:#ffffff;
+	 border-top-style:solid;	 
+	 border-top:solid 1px #cccccc;
+	 border-bottom-style:none;
+	 border-left-style:none;
+	 border-right-style:none;
+}
+.grid1
+{ 
+	border-style:none;
+}
+	
+}
+.locator_ballon
+{
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size:10px;
+}

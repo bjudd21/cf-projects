@@ -1,0 +1,6 @@
+﻿<parameters>
+  <parameter name="IIS Web Application Name" defaultValue="Default Web Site/" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\rmarinko\.CGIGOVT\\Documents\\Visual\ Studio\ 2012\\WebSites\\PropertyManagement" tags="IisApp" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\rmarinko\.CGIGOVT\\Documents\\Visual\ Studio\ 2012\\WebSites\\PropertyManagement" tags="IisApp" />
+  </parameter>
+</parameters>

@@ -1,0 +1,38 @@
+﻿body {
+}
+/* Inspection Details *******/
+#inspwrapper
+{
+	padding-top:25px;	
+}
+.inspection_upd
+{
+	padding: 5px;
+	width: 807px;
+	top: 20px;
+}
+.inspdet_cell1
+{
+	width:149px;
+	text-align:right;
+}
+.inspdet_cell2
+{
+	width:197px;
+}
+.inspdet_cell3
+{
+	width:149px;
+	text-align:right;
+}
+.inspdet_cell4
+{
+	width:150px;
+}
+
+.pButton 
+{
+	background-color:#E0E9F9;
+    font-weight:bold;
+    height:27px;   
+}

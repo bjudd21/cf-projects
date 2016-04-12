@@ -1,0 +1,46 @@
+﻿body
+{
+    /*background-image:url(../Images/BackgroundGrad1.jpg);*/
+    /*background-repeat:repeat-x;*/
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:8.25pt;
+	background-color:#e9f3ff;
+	/*border: solid 1px #ffffff;*/
+	/*width:768px;*/
+	
+}
+.NewButton
+{
+	background-image: url(../Images/Button2Off.gif);
+	background-color:Transparent ;
+	background-position:center ;
+	background-repeat:no-repeat;
+	border:None;
+	font-weight:bold;
+	color: Black;   
+    cursor:pointer;
+    width:158px;
+    height:36px; 
+}
+.NewButtonOver
+{
+	background-image: url(../Images/Button2On.gif);
+	background-color:Transparent ;
+	background-position:center ;
+	background-repeat:no-repeat;
+	border:None;
+	font-weight:bold;   
+    cursor:pointer;
+    width:158px;
+    height:36px; 
+    color:black;
+    
+}
+.colorpick
+{
+	z-index:10000;
+}
+.dropbox
+{
+	z-index:-1000;
+}

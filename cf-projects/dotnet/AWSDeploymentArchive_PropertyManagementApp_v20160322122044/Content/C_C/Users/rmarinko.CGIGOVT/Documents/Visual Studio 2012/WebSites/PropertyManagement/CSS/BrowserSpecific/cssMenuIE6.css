@@ -1,0 +1,9 @@
+﻿.cssmenu ul.AspNet-Menu li /* Tier 1*/
+{
+    width: 1em;
+    white-space:nowrap;
+}
+.cssmenu ul.AspNet-Menu ul li /* Tier 2*/
+{
+    white-space:normal;
+}

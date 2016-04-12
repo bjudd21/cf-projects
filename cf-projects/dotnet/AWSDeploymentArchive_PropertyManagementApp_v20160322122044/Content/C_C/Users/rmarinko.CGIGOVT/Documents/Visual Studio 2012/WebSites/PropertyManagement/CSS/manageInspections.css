@@ -1,0 +1,59 @@
+﻿.PagerButton
+{
+    padding: 1px;
+    cursor: pointer;
+    border: 0px;
+    background:transparent url(../Images/first.gif) no-repeat scroll center;
+    width: 20px;
+    vertical-align:middle;
+}
+.PagerButton:hover
+{
+    border: 1px solid #9EB6CE;
+    padding: 0px;
+}
+
+.FirstPage
+{
+    background:transparent url(../Images/first.gif) no-repeat scroll center;
+}
+
+.PrevPage
+{
+    background:transparent url(../Images/prev.gif) no-repeat scroll center;
+    margin-right: 6px;
+}
+
+.NextPage
+{
+    background:transparent url(../Images/next.gif) no-repeat scroll center;
+}
+
+.LastPage
+{
+    background:transparent url(../Images/last.gif) no-repeat scroll center;
+}
+
+.CustomGridPager td
+{
+	background: #ffac00 url(../Images/bg.gif) repeat-x !important;
+	color: #005896 !important;
+}
+.CustomGridPager table td
+{
+	background: none !important;
+}
+.CustomGridPager INPUT
+{
+	height: 16px;
+	border: 0px;
+	font-size: 11px;
+}
+.CustomGridPager A
+{
+	color: #005896 !important;
+}
+.CustomGridPager TD
+{
+	padding:0px;
+}

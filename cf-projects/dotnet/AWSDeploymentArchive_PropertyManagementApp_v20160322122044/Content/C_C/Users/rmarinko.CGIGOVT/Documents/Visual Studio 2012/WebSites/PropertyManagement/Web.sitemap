@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode roles="*" url="" title="Main Menu"  description="">
+   		<siteMapNode roles ="*" url="Default.aspx" title="Dashboard" description="Dashboard Overview" />
+   		<siteMapNode roles ="*" url="Properties.aspx" title="Properties" description="Properties" />
+   		<siteMapNode roles ="*" url="Units.aspx" title="Units" description="Units" />
+   		<siteMapNode roles ="*" url="Owners.aspx" title="Owners" description="Owners" />
+   		<siteMapNode roles ="*" url="Tenants.aspx" title="Tenants" description="Tenants" />
+		<siteMapNode roles ="*" url="Reservations.aspx" title="Reservations" description="Reservations" />
+	</siteMapNode>
+</siteMap>
