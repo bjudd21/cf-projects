@@ -1,0 +1,134 @@
+{
+"AWSTemplateFormatVersion": "2010-09-09",
+
+
+ "Parameters" : {
+    "KeyName" : {
+      "Description" : "Name of an existing EC2 KeyPair to enable access to the AWS Elastic Beanstalk instance",
+      "Type" : "AWS::EC2::KeyPair::KeyName",
+      "ConstraintDescription" : "must be the name of an existing EC2 KeyPair"
+    },
+    "DNSName" : {
+    	"Description" : "Name of the website you want to create. Ex: www.mywebsite.com",
+    	"Type" : "String"
+    },
+    "DNSZoneId" : {
+    	"Description" : "Select the corresponding DNS Zone that matches your DNS Name request",
+    	"Type" : "AWS::Route53::HostedZone::Id"
+    },
+    "WebsiteFileName" : {
+    	"Description" : "Enter the name of the deployment file. Ex: website.zip",
+    	"Type" : "String"
+
+    }
+  },
+
+"Resources": {
+	
+	"DNS" : {
+    "Type" : "AWS::Route53::RecordSetGroup",
+    "Properties" : {
+      "HostedZoneId" :{"Ref" : "DNSZoneId"}, 
+      "Comment" : "CNAME alias targeted to Elastic Beanstalk endpoint.",
+      "RecordSets" : [
+        {
+          "Name" : {"Ref" : "DNSName"},	
+          "Type" : "CNAME",
+          "TTL"  : "900",
+          "ResourceRecords" : [{ "Fn::GetAtt" : ["devEnvironment","EndpointURL"] }]
+        }]
+    }
+  },
+
+
+	"devBeanstalkApplication": {
+		"Type": "AWS::ElasticBeanstalk::Application",
+		"Properties": {
+		"Description": "AWS Elastic Beanstalk dotnet Application"
+	}
+},
+
+	"devApplicationVersion": {
+		"Type": "AWS::ElasticBeanstalk::ApplicationVersion",
+		"Properties": {
+		"ApplicationName": { "Ref": "devBeanstalkApplication" },
+		"Description": "AWS ElasticBeanstalk dotnet Application Version",
+		"SourceBundle": {
+			"S3Bucket": "cgicftesting",
+			"S3Key": {"Ref" : "WebsiteFileName"}
+			}
+		}
+},
+
+	"devConfigurationTemplate": {
+		"Type": "AWS::ElasticBeanstalk::ConfigurationTemplate",
+		"Properties": {
+			"ApplicationName": { "Ref": "devBeanstalkApplication" },
+			"Description": "AWS ElasticBeanstalk dotnet Configuration Template",
+			"OptionSettings": [
+			{
+				"Namespace": "aws:autoscaling:asg",
+				"OptionName": "MinSize",
+				"Value": "4"
+			},
+			{
+				"Namespace": "aws:autoscaling:asg",
+				"OptionName": "MaxSize",
+				"Value": "6"
+			},
+			{
+				"Namespace": "aws:elasticbeanstalk:environment",
+				"OptionName": "EnvironmentType",
+				"Value": "LoadBalanced"
+			},
+			{
+    			"Namespace" : "aws:elb:listener:443",
+    			"OptionName" : "ListenerProtocol",
+    			"Value" : "HTTPS"
+  			},
+  			{
+    			"Namespace" : "aws:elb:listener:443",
+    			"OptionName" : "SSLCertificateId",
+    			"Value" : "arn:aws:acm:us-east-1:363166310010:certificate/ee988fa8-2f03-450f-8471-1d721c3c5a70"
+  			},
+  			{
+    			"Namespace" : "aws:elb:listener:443",
+    			"OptionName" : "InstancePort",
+    			"Value" : "80"
+  			},
+  			{
+    			"Namespace" : "aws:elb:listener:443",
+    			"OptionName" : "InstanceProtocol",
+    			"Value" : "HTTP"
+  			},
+  			{
+    			"Namespace" : "aws:elb:listener:80",
+    			"OptionName" : "ListenerEnabled",
+    			"Value" : "false"
+  			}],
+
+	"SolutionStackName": "64bit Windows Server 2012 R2 running IIS 8.5"
+			}
+	},
+	"devEnvironment": {
+		"Type": "AWS::ElasticBeanstalk::Environment",
+			"Properties": {
+				"ApplicationName": { "Ref": "devBeanstalkApplication" },
+				"Description": "AWS ElasticBeanstalk dotnet Environment",
+				"TemplateName": { "Ref": "devConfigurationTemplate" },
+				"VersionLabel": { "Ref": "devApplicationVersion" },
+				"OptionSettings" : [{
+            		"Namespace" : "AWS:ElasticBeanstalk:container:dotnet:apppool",
+            		"OptionName" : "Target Runtime",
+            		"Value" : "2.0"
+         			}]
+				}
+			}
+		},
+	"Outputs" : {
+    	"URL" : {
+      	"Description" : "URL of the AWS Elastic Beanstalk Environment",
+      	"Value" : {"Fn::Join" : ["", ["https://", {"Ref" : "DNSName"}]]}
+    		}
+  		}
+  }
